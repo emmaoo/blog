@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+/*初始化  reset*/
+/*base*/
+body{font-size:14px;font-family:"微软雅黑","Microsoft YaHei";}
+i,em{ font-style:normal;}
+body,button,dd,dl,dt,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul,li{margin:0;padding:0;}
+dl,dd,dt{margin:0;padding:0;font-family: inherit;font-size: inherit; font-style: inherit; font-weight: inherit; }
+h1, h2, h3, h4, h5, h6{font-size: 14px; font-family:"微软雅黑";}
+code,kbd,pre,samp{font-family:courier new,courier,monospace}
+small{font-size:12px}
+b{ font-weight:normal;}
+img{ border:0px;vertical-align: top;}
+select input{-webkit-appearance: none;
+    outline: none;
+    border: none;  }
+legend{color:#000}
+ol,ul,li{list-style:none}
+a{text-decoration:none;color: #c8c8c8;}
+a:hover{text-decoration:none;}
+textarea{resize:none;}
+a,button{outline:none;}
+a,button{cursor:pointer;}
+a:focus{outline:none;}
+a:active{outline:none;}
+textarea,select,input {
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    font-weight: normal;
+}
+/*功能  function*/
+.fl{float:left}
+.fr{float:right}
+.clearfix:after{ content: "."; display: block;height: 0;clear:both;visibility: hidden;}
+.clearfix{zoom:1;}
+:link, :visited,:hover{text-decoration: none;}
+
+
+

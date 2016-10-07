@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mtime时光网：让电影遇见生活</title>
+    <link type="image/x-icon" href="img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="total" class="total">
+    <!---------------------------导航--------------------------------------------------->
+    <div class="header_nav">
+        <div  class="headbar">
+            <h1  class="head_logo"><a href="#"></a></h1>
+            <ul  class="head_main_nav">
+                <li><a href="javascript:;"class="on">首页<i></i></a></li>
+                <li><a href="javascript:;">购票</a></li>
+                <li><a href="javascript:;">正版商城<em></em></a></li>
+                <li><a href="javascript:;">新闻</a></li>
+                <li><a href="javascript:;">发现</a></li>
+                <li><a href="javascript:;">社区</a></li>
+            </ul>
+            <div class="head_log_in">
+                <a href="javascript:;">注册</a>
+                <span></span>
+                <a href="javascript:;">登录</a>
+            </div>
+            <div id="head_onload" class="head_onload">
+                <a href="javascript:;">
+                <i class="head_left"></i>
+                <em></em>App下载<span></span>
+                <i class="head_right"></i>
+                <i class="little"></i>
+                </a>
+                <div class="twoCode">
+                    <a href="javascript:;"></a>
+                    <p>扫描下载客户端</p>
+                </div>
+            </div>
+            <a href="javascript:;">
+                <div id="shopping_cart" class="shopping_cart">
+                    <em></em>
+                    <span>0</span>
+                    <div class="list" id="list">您的购物车还是空的，赶快选购哦。</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="header_nav header_nav1" id="header_nav1">
+        <div class="headbar">
+            <h1 class="head_logo" id="head_logo"><a href="#"></a></h1>
+            <div><div class="search_box search_box_one" id="search_box">
+                <div class="toSearch" id="toSearch1">
+                    <strong>全部</strong>
+                    <i></i>
+                    <span></span>
+                    <div class="toSearch_list" id="toSearch_list1">
+                        <ul>
+                            <li>全部</li>
+                            <li>电影</li>
+                            <li>影人</li>
+                            <li>影院</li>
+                            <li>商品</li>
+                            <li>新闻</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="text" class="search_inner" id="search_inner1" placeholder="迷失东京">
+                <a href="javascript:;" class="forSearch" id="forSearch1">
+                    <i class="search1"></i>
+                    <i class="search2"></i>
+                </a>
+            </div>
+                <div class="search_to_find" id="search_to_find1" style="display: none">
+                    <ul>
+                        <li>搜索记录<span>清空历史</span></li>
+                        <li>开心麻花</li>
+                        <li>笑傲江湖</li>
+                    </ul>
+                </div>
+                <div class="search_to_find" id="searchAll1" style="display: none">
+                    <ul>
+                        <li class="single_find"></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="head_main_nav">
+                <li><a href="javascript:;"class="on">首页<i id="little"></i></a></li>
+                <li><a href="javascript:;">购票</a></li>
+                <li><a href="javascript:;">正版商城<em></em></a></li>
+                <li><a href="javascript:;">新闻</a></li>
+                <li><a href="javascript:;">发现</a></li>
+                <li><a href="javascript:;">社区</a></li>
+            </ul>
+            <div class="head_log_in">
+                <a href="javascript:;">注册</a>
+                <span></span>
+                <a href="javascript:;">登录</a>
+            </div>
+            <div id="head_onload1" class="head_onload">
+                <a href="javascript:;">
+                    <i class="head_left"></i>
+                    <em></em>App下载<span></span>
+                    <i class="head_right"></i>
+                    <i class="little"></i>
+                </a>
+                <div class="twoCode">
+                    <a href="javascript:;"></a>
+                    <p>扫描下载客户端</p>
+                </div>
+            </div>
+            <div class="head_search_one" id="head_search_one"><a href="javascript:;"></a></div>
+            <a href="javascript:;">
+                <div id="shopping_cart1" class="shopping_cart">
+                    <em></em>
+                    <span>0</span>
+                    <div class="list" id="list1">您的购物车还是空的，赶快选购哦。</div>
+                </div>
+            </a>
+        </div>
+        <div class="toTop toTopSearch" id="toTopSearch"><i></i></div>
+        <div class="toTop toTophover" id="toTophover"><i></i></div>
+    </div>
+    <!---------------------------搜索栏 ---------------------------------------------------->
+    <div id="header_search" class="header_search">
+        <div class="search_box">
+            <div class="toSearch" id="toSearch">
+                <strong>全部</strong>
+                <i></i>
+                <span></span>
+                <div class="toSearch_list" id="toSearch_list">
+                    <ul>
+                        <li>全部</li>
+                        <li>电影</li>
+                        <li>影人</li>
+                        <li>影院</li>
+                        <li>商品</li>
+                        <li>新闻</li>
+                    </ul>
+                </div>
+            </div>
+            <input type="text" class="search_inner" id="search_inner" placeholder="迷失东京">
+            <a href="javascript:;" class="forSearch" id="forSearch">
+                <i class="search1"></i>
+                <i class="search2"></i>
+            </a>
+        </div>
+        <div class="search_to_find" id="search_to_find" style="display: none">
+            <ul>
+                <li>搜索记录<span>清空历史</span></li>
+                <li>开心麻花</li>
+                <li>笑傲江湖</li>
+            </ul>
+        </div>
+        <div class="search_to_find" id="searchAll" style="display: none">
+            <ul>
+                <li class="single_find"></li>
+            </ul>
+        </div>
+    </div>
+    <!----------------------------主体----------------------------------------------------->
+    <div>
+        <!------------轮播------------->
+        <div id="mainbody" class="mainbody">
+            <div id="body_banner" class="body_banner">
+                <div class="banner_inner">
+                    <div><a href="javascript:;"><img realImg="img/1.jpg" alt=""></a></div>
+                    <div><a href="javascript:;"><img realImg="img/2.jpg" alt=""></a></div>
+                    <div><a href="javascript:;"><img realImg="img/3.jpg" alt=""></a></div>
+                    <div><a href="javascript:;"><img realImg="img/4.jpg" alt=""></a></div>
+                    <div><a href="javascript:;"><img realImg="img/5.jpg" alt=""></a></div>
+                </div>
+                <ul>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <a href="javascript:;" class="btn btn1" id="btn1"><em class="btnLeft"></em></a>
+                <a href="javascript:;" class="btn btn2" id="btn2"><em class="btnRight"></em></a>
+            </div>
+        </div>
+        <!------------今日热点--------->
+        <div class="today_hot">
+            <h4>今日热点</h4>
+            <div class="today_hot_nav">
+                <i>
+                <ul>
+                    <li><a href="javascript:;">时光对话</a></li>
+                    <li><a href="javascript:;">产业聚焦</a></li>
+                    <li><a href="javascript:;">电视情报</a></li>
+                    <li class="no_border"><a href="javascript:;">全球拾趣</a></li>
+                </ul>
+                </i>
+            </div>
+            <div class="hot_show hot_show_img">
+                <ul>
+                    <li><a href="javascript:;"><img src="img/picture1.jpg" alt=""><h3>《天空之眼》将全线角逐奥斯卡</h3><span>海伦再冲奥 艾伦里克曼有望获最佳男配</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture2.jpg" alt=""><h3>小本《夜色人生》首曝预告</h3><span>画风复古华丽 小本走上黑帮不归路</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture3.jpg" alt=""><h3>漫威奇幻片《奇异博士》发新海报</h3><span>城市颠倒天地扭转 凸显卷福法力无边</span><i></i></a></li>
+                    <li class="event"><a href="javascript:;"><img src="img/picture4.jpg" alt=""><h3>专访HBO新剧《西部世界》五大主演</h3><span>霍普金斯：人的痛苦来自控制一切的执念</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture5.jpg" alt=""><h3>《夜行动物》曝角色海报&新剧照</h3><span>艾米亚当斯颠覆形象 角色面孔被空白吞噬</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture6.jpg" alt=""><h3>窦靖童大银幕首次献声 酷似王菲</h3><span>爱情片《七月与安生》曝主题曲mv</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture7.jpg" alt=""><h3>张艺谋魔幻片《长城》发布新款海报</h3><span>马特达蒙纵身飞入战场 新预告或将发布</span><i></i></a></li>
+                    <li class="event"><a href="javascript:;"><img src="img/picture8.jpg" alt=""><h3>汤姆汉克斯《萨利机长》影评</h3><span>表演出彩有望再冲奥 细节稍有缺憾瑕不掩瑜</span><i></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--------------banner1-------->
+        <div class="img1">
+            <p class="lookmore"><a href="javascript:;">查看更多</a></p>
+            <a href="javascript:;"><img src="img/img1.jpg" alt=""></a>
+        </div>
+        <!---------------sell---------->
+        <div class="sellsection" id="sellsection">
+            <dl class="sellhead" id="sellhead">
+                <dd class="curs">正在售票<i>51</i>部</dd>
+                <dd>即将上映<i>64</i>部</dd>
+            </dl>
+            <div class="sellmain">
+                <div class="selling">
+                    <div class="address">
+                        <div class="city">
+                            <div class="i_city">
+                                <i class="i_city1"></i>
+                                <span>北京</span>
+                                <i class="i_city2"></i>
+                            </div>
+                        </div>
+                        <div class="movieSelect">
+                            <span>
+                                <em>共<strong>42</strong>部</em>
+                                <b>选影片</b>
+                            </span>
+                            <i></i>
+                        </div>
+                        <div class="movieSelect">
+                             <span>
+                                <em>共<strong>137</strong>家</em>
+                                <b>找影院</b>
+                            </span>
+                            <i></i>
+                        </div>
+                        <div class="movieSelect unique">
+                            <span>
+                                <b>选时间</b>
+                            </span>
+                            <i></i>
+                        </div>
+                        <div class="quickSelect">
+                            <a href="javascript:;">快速购票</a>
+                        </div>
+                    </div>
+                    <div class="showing" id="showing">
+                        <div class="scrollImg" id="scrollImg">
+                            <dl>
+                                <dt>
+                                    <div class="show_img">
+                                        <a href="javascript:;"><img src="img/scroll1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="formation">
+                                        <h3><a href="javascript:;">星际迷航3：超越星辰</a></h3>
+                                        <p>09月02日上映 - <a href="javascript:;">动作/冒险</a></p>
+                                        <p>120分钟 - 3D/IMAX3D/…</p>
+                                        <p class="CP"><i></i>史波克的cp线有点多啊</p>
+                                        <div class="price">
+                                            <p><strong>28</strong>元起</p>
+                                            <a href="javascript:;">选座购票</a>
+                                        </div>
+                                    </div>
+                                </dt>
+                                <dd>
+                                    <div class="price_cover_box" id="price_cover_box">
+                                        <a href="javascript:;" class="covered"><img src="img/scroll2.jpg" alt=""><em></em><i>6.9</i></a>
+                                        <div class="cover" id="cover">
+                                            <a href="javascript:;">
+                                                <p>09月02日上映</p>
+                                                <p>奇幻/动作</p>
+                                                <p>125分钟</p>
+                                                <p class="cover_color"><i></i>难得全称起音乐还很有演技</p>
+                                                <p class="cover_price"><strong>22</strong>元起</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="javascript:;">寄生兽</a></h3>
+                                    <a href="javascript:;" class="price_btn">选座购票</a>
+                                </dd>
+                                <dd>
+                                    <div class="price_cover_box">
+                                        <a href="javascript:;" class="covered"><img src="img/scroll3.jpg" alt=""><em></em><i>7.5</i></a>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <p>09月09日上映</p>
+                                                <p>喜剧/家庭</p>
+                                                <p>87分钟</p>
+                                                <p class="cover_color"><i></i>九条职业铲屎官无法拒绝</p>
+                                                <p class="cover_price"><strong>22</strong>元起</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="javascript:;">九条命</a></h3>
+                                    <a href="javascript:;" class="price_btn">选座购票</a>
+                                </dd>
+                                <dd>
+                                    <div class="price_cover_box">
+                                        <a href="javascript:;" class="covered"><img src="img/scroll4.jpg" alt=""><em></em><i>7.1</i></a>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <p>09月09日上映</p>
+                                                <p>奇幻/科幻</p>
+                                                <p>85分钟</p>
+                                                <p class="cover_color"><i></i>玩的就是情怀和不羁</p>
+                                                <p class="cover_price"><strong>22</strong>元起</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="javascript:;">魔法老师</a></h3>
+                                    <a href="javascript:;" class="price_btn">选座购票</a>
+                                </dd>
+                                <dd>
+                                    <div class="price_cover_box">
+                                        <a href="javascript:;" class="covered"><img src="img/scroll5.jpg" alt=""><em></em><i>7.0</i></a>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <p>09月09日上映</p>
+                                                <p>冒险/惊悚</p>
+                                                <p>115分钟</p>
+                                                <p class="cover_color"><i></i>潜艇版《太平洋大逃杀》</p>
+                                                <p class="cover_price"><strong>23</strong>元起</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="javascript:;">黑海夺金</a></h3>
+                                    <a href="javascript:;" class="price_btn">选座购票</a>
+                                </dd>
+                                <dd>
+                                    <div class="price_cover_box">
+                                        <a href="javascript:;" class="covered"><img src="img/scroll6.jpg" alt=""><i>7.6</i></a>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <p>08月023日上映</p>
+                                                <p>惊悚/动作</p>
+                                                <p>124分钟</p>
+                                                <p class="cover_color"><i></i>镜头吃了炫迈口香糖</p>
+                                                <p class="cover_price"><strong>25</strong>元起</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="javascript:;">谍影重重5</a></h3>
+                                    <a href="javascript:;" class="price_btn">选座购票</a>
+                                </dd>
+                                <dd>
+                                    <div class="price_cover_box">
+                                        <a href="javascript:;" class="covered"><img src="img/scroll7.jpg" alt=""><i>7.5</i></a>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <p>09月08日上映</p>
+                                                <p>奇幻/爱情</p>
+                                                <p>116分钟</p>
+                                                <p class="cover_color"><i></i>山河水域才是正真的主角</p>
+                                                <p class="cover_price"><strong>28</strong>元起</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="javascript:;">长江图</a></h3>
+                                    <a href="javascript:;" class="price_btn">选座购票</a>
+                                </dd>
+                                <dd>
+                                    <div class="price_cover_box">
+                                        <a href="javascript:;" class="covered"><img src="img/scroll8.jpg" alt=""><i>6.7</i></a>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <p>08月23日上映</p>
+                                                <p>动画/冒险</p>
+                                                <p>91分钟</p>
+                                                <p class="cover_color"><i></i>世界末日的嫁衣情节</p>
+                                                <p class="cover_price"><strong>27</strong>元起</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="javascript:;">冰河世界5</a></h3>
+                                    <a href="javascript:;" class="price_btn">选座购票</a>
+                                </dd>
+                                <dd>
+                                    <div class="price_cover_box">
+                                        <a href="javascript:;" class="covered"><img src="img/scroll9.jpg" alt=""><i>7.0</i></a>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <p>08月12日上映</p>
+                                                <p>纪录片</p>
+                                                <p>79分钟</p>
+                                                <p class="cover_color"><i></i>温柔跟野性的融合</p>
+                                                <p class="cover_price"><strong>27</strong>元起</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="javascript:;">我们诞生在中国</a></h3>
+                                    <a href="javascript:;" class="price_btn">选座购票</a>
+                                </dd>
+                                <dd>
+                                    <div class="price_cover_box">
+                                        <a href="javascript:;" class="covered"><img src="img/scroll2.jpg" alt=""><i>6.9</i></a>
+                                        <div class="cover">
+                                            <a href="javascript:;">
+                                                <p>09月02日上映</p>
+                                                <p>奇幻/动作</p>
+                                                <p>125分钟</p>
+                                                <p class="cover_color"><i></i>难得全称起音乐还很有演技</p>
+                                                <p class="cover_price"><strong>22</strong>元起</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3><a href="javascript:;">寄生兽</a></h3>
+                                    <a href="javascript:;" class="price_btn">选座购票</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="iconOne">
+                    <div></div>
+                    <a href="javascript:;" class="icon_btn icon_btnL" id="icon_btnL"><i></i></a>
+                    <a href="javascript:;" class="icon_btn icon_btnR" id="icon_btnR"><i></i></a>
+                </div>
+            </div>
+            <div class="sellmain">
+                <div class="sellshow" id="sellshow">
+                    <dl class="scrollshow" id="scrollshow">
+                        <dd>
+                            <p class="showDate">9月14号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow1.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">长江图</a></h3>
+                                    <div>
+                                        <p><span>360</span>人想看<a href="javascript:;">-爱情/奇幻</a></p>
+                                        <p>导演：<a href="javascript:;">杨超</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                    <p class="prevPrice"><strong>38</strong>元起</p>
+                                    <a href="javascript:;" class="prevBtn">超前预售</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月14号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow2.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">反贪风暴2</a></h3>
+                                    <div>
+                                        <p><span>735</span>人想看<a href="javascript:;">-动作/剧情</a></p>
+                                        <p>导演：<a href="javascript:;">林德禄</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                    <p class="prevPrice"><strong>33</strong>元起</p>
+                                    <a href="javascript:;" class="prevBtn">超前预售</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月14号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow3.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">七月与安生</a></h3>
+                                    <div>
+                                        <p><span>393</span>人想看<a href="javascript:;">-爱情/剧情</a></p>
+                                        <p>导演：<a href="javascript:;">曾国祥</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                    <p class="prevPrice"><strong>33</strong>元起</p>
+                                    <a href="javascript:;" class="prevBtn">超前预售</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月14号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow4.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">追凶者也</a></h3>
+                                    <div>
+                                        <p><span>1310</span>人想看<a href="javascript:;">-犯罪/剧情</a></p>
+                                        <p>导演：<a href="javascript:;">曹保平</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                    <p class="prevPrice"><strong>38</strong>元起</p>
+                                    <a href="javascript:;" class="prevBtn">超前预售</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月14号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow5.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">大话西游3</a></h3>
+                                    <div>
+                                        <p><span>1397</span>人想看<a href="javascript:;">-奇幻</a></p>
+                                        <p>导演：<a href="javascript:;">刘镇伟</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                    <p class="prevPrice"><strong>38</strong>元起</p>
+                                    <a href="javascript:;" class="prevBtn">超前预售</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月15号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow6.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">麦兜·饭宝奇兵</a></h3>
+                                    <div>
+                                        <p><span>355</span>人想看<a href="javascript:;">-动画/喜剧</a></p>
+                                        <p>导演：<a href="javascript:;">谢立文</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                    <p class="prevPrice"><strong>32</strong>元起</p>
+                                    <a href="javascript:;" class="prevBtn">超前预售</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月15号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow7.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">我的战争</a></h3>
+                                    <div>
+                                        <p><span>247</span>人想看<a href="javascript:;">-剧情/历史</a></p>
+                                        <p>导演：<a href="javascript:;">彭顺</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                    <p class="prevPrice"><strong>35</strong>元起</p>
+                                    <a href="javascript:;" class="prevBtn">超前预售</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月20号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow8.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">巴黎危机</a></h3>
+                                    <div>
+                                        <p><span>95</span>人想看<a href="javascript:;">-动作/剧情</a></p>
+                                        <p>导演：<a href="javascript:;">詹姆斯·瓦特金斯</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                    <p class="prevPrice"><strong>38</strong>元起</p>
+                                    <a href="javascript:;" class="prevBtn">超前预售</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月23号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow9.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">斗鸟外传:萌宝满天飞</a></h3>
+                                    <div>
+                                        <p><span>297</span>人想看<a href="javascript:;">-动画/喜剧</a></p>
+                                        <p>导演：<a href="javascript:;">尼古拉斯·斯托勒</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月23号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow10.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">樱桃小丸子</a></h3>
+                                    <div>
+                                        <p><span>596</span>人想看<a href="javascript:;">-动画/剧情</a></p>
+                                        <p>导演：<a href="javascript:;">高木淳</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+                                    <p class="prevPrice"><strong>29</strong>元起</p>
+                                    <a href="javascript:;" class="prevBtn">超前预售</a>
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月23号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow11.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">234说爱你</a></h3>
+                                    <div>
+                                        <p><span>75</span>人想看<a href="javascript:;">-爱情/剧情</a></p>
+                                        <p>导演：<a href="javascript:;">张伟珍</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <p class="showDate">9月29号</p>
+                            <div>
+                                <a href="javascript:;" class="showPic"><img src="img/scrollshow12.jpg" alt=""></a>
+                                <div class="information">
+                                    <h3><a href="javascript:;">从你的全世界路过</a></h3>
+                                    <div>
+                                        <p><span>1168</span>人想看<a href="javascript:;">-爱情</a></p>
+                                        <p>导演：<a href="javascript:;">张一白</a></p>
+                                        <p class="play"><a href="">预告片:<i></i></a></p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="iconOne">
+                    <p id="LBorder"></p>
+                    <div id="RBorder"></div>
+                    <a href="javascript:;" class="icon_btn icon_btnL icon_sellL" id="sellBtnL"><i></i></a>
+                    <a href="javascript:;" class="icon_btn icon_btnR" id="sellBtnR"><i></i></a>
+                </div>
+            </div>
+            <div class="img1">
+                <p class="lookmore"><a href="javascript:;">查看更多</a></p>
+                <a href="javascript:;"><img src="img/big5.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <!--------------banner2-------->
+        <div class="trading">
+                <h4>正版商城</h4>
+                <div class="today_hot_nav">
+                    <i>
+                        <ul>
+                            <li><a href="javascript:;">新品登录</a></li>
+                            <li><a href="javascript:;">热销爆款</a></li>
+                            <li><a href="javascript:;">折扣促销</a></li>
+                            <li class="no_border"><a href="javascript:;">超前预售</a></li>
+                        </ul>
+                    </i>
+                </div>
+                <div class="tradingbox">
+                    <div class="goodslist">
+                        <ul>
+                            <li>
+                                <h3><a href="javascript:;"><i><img src="img/one.jpg" alt=""></i>玩具模型</a></h3>
+                                <p><a href="javascript:;">模拟公仔 仿真收藏 变形金刚 更多 ></a></p>
+                            </li>
+                            <li>
+                                <h3><a href="javascript:;"><i><img src="img/two.jpg" alt=""></i>数码配件</a></h3>
+                                <p><a href="javascript:;">手机配件 充电装备 时尚U盘 更多 ></a></p>
+                            </li>
+                            <li>
+                                <h3><a href="javascript:;"><i><img src="img/three.jpg" alt=""></i>服装服饰</a></h3>
+                                <p><a href="javascript:;">潮牌男装 时尚女装 服饰配件 更多 ></a></p>
+                            </li>
+                            <li>
+                                <h3><a href="javascript:;"><i><img src="img/fore.jpg" alt=""></i>居家日用</a></h3>
+                                <p><a href="javascript:;">抱枕靠椅 创意文具 水杯水壶 更多 ></a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="goodsshow ">
+                        <div class="goodsshow one"><a href=""><img src="img/goods1.jpg" alt=""></a></div>
+                        <div class="goodsshow two">
+                            <a href=""><img src="img/goods2.jpg" alt="" class="img_bottom imgs"><i>全场39</i></a>
+                            <a href=""><img src="img/good3.jpg" alt="" class="imgs"><i>热门推荐</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="maincommend">
+                <a href="javascript:;" class="fix"><img src="img/main.jpg" alt=""></a>
+                <dl class="fix">
+                    <dt>
+                        <a href="javascript:;"><img src="img/main1.jpg" alt="">
+                            <div class="image">
+                                <h3>闪货专区</h3>
+                                <p>精选好货 每日更新</p>
+                            </div>
+                        </a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;"><img src="img/main2.jpg" alt="">
+                            <div class="image">
+                                <h3>HT铁霸王&amp;Mark3套装</h3>
+                                <p>Q萌可爱 钢铁横流</p>
+                                <p>￥<strong>445</strong></p>
+                            </div>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;"><img src="img/main3.jpg" alt="">
+                            <div class="image">
+                                <h3>复联2公仔MARK43</h3>
+                                <p>金属涂装 质感十足</p>
+                                <p>￥<strong>288</strong></p>
+                            </div>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;"><img src="img/main4.jpg" alt="">
+                            <div class="image">
+                                <h3>Hot Toys</h3>
+                                <p>HT精品百宝箱</p>
+                            </div>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;"><img src="img/main5.jpg" alt="">
+                            <div class="image">
+                                <h3>粘土人替换表情收纳套件</h3>
+                                <p>可爱十足 Q萌套件</p>
+                                <p>￥<strong>89</strong></p>
+                            </div>
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+        <div class="maincommend">
+                <a href="javascript:;" class="fix"><img src="img/main6.jpg" alt=""></a>
+                <dl class="fix">
+                    <dt>
+                        <a href="javascript:;"><img src="img/main7.jpg" alt="">
+                            <div class="image">
+                                <h3>特别策划</h3>
+                                <p>NBA全明星大汇聚</p>
+                            </div>
+                        </a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;"><img src="img/main8.jpg" alt="">
+                            <div class="image">
+                                <h3>部落风尚皮革手机壳</h3>
+                                <p>兽牙流苏 男神同款</p>
+                                <p>￥<strong>88</strong></p>
+                            </div>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;"><img src="img/main9.jpg" alt="">
+                            <div class="image">
+                                <h3>爱丽丝梦游仙境充电宝</h3>
+                                <p>迷之微笑 持久续航</p>
+                                <p>￥<strong>199</strong></p>
+                            </div>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;"><img src="img/main10.jpg" alt="">
+                            <div class="image">
+                                <h3>悠哉生活</h3>
+                                <p>轻松熊人气周边</p>
+                            </div>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;"><img src="img/main11.jpg" alt="">
+                            <div class="image">
+                                <h3>FUN潮牌辛普森时尚棒球帽</h3>
+                                <p>简约时尚 潮流大方</p>
+                                <p>￥<strong>229</strong></p>
+                            </div>
+                        </a>
+                    </dd>
+                </dl>
+            </div>
+        <div class="partshow">
+            <ul>
+                <li><a href="javascript:;"><img src="img/00005.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="img/00001.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="img/00002.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="img/00003.jpg" alt=""></a></li>
+                <li><a href="javascript:;"><img src="img/00004.jpg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="img1">
+                <p class="lookmore"><a href="javascript:;">查看更多</a></p>
+                <a href="javascript:;"><img src="img/big.jpg" alt=""></a>
+            </div>
+        <div class="moveshow">
+                <h4>时光精选</h4>
+                <div class="today_hot_nav">
+                    <i>
+                        <ul class="move">
+                            <li><a href="javascript:;">时光电影TOP100</a></li>
+                            <li><a href="javascript:;">观影指南</a></li>
+                            <li><a href="javascript:;">获奖佳片</a></li>
+                            <li><a href="javascript:;">特约影评</a></li>
+                            <li><a href="javascript:;">卡片大富翁</a></li>
+                            <li class="no_border"><a href="javascript:;">电影猜猜猜</a></li>
+                        </ul>
+                    </i>
+                </div>
+                <div class="moveshow_are ">
+                    <div class="movie left choice">
+                        <div class="move_bar">
+                            <h4>新片预告</h4>
+                            <a href="javascript:;">更多 ></a>
+                        </div>
+                        <dl>
+                            <dt>
+                                <a href="javascript:;"><img src="img/move1.jpg" alt=""><i></i></a>
+                                <a href="javascript:;">
+                                    <h3>《爵迹》制作特辑 郭敬明袒露心路历程</h3>
+                                    <p>2016.9.30中国 上映</p>
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href=""><img src="img/move2.jpg" alt="">
+                                <span>
+                                    <i></i>
+                                    <strong>《鲨滩》采访特辑</strong>
+                                    <p>2016.9.9中国 上映</p>
+                                </span>
+                                </a>
+                            </dd>
+                            <dd><a href=""><img src="img/move3.jpg" alt="">
+                                <span>
+                                    <i></i>
+                                    <strong>《湄公河行动》制作特辑</strong>
+                                    <p>2016.9.30中国 上映</p>
+                                </span>
+                            </a></dd>
+                            <dd><a href=""><img src="img/move4.jpg" alt="">
+                                <span>
+                                    <i></i>
+                                    <strong>《机械师2》中文预告片</strong>
+                                    <p>2016.8.26美国 上映</p>
+                                </span>
+                            </a></dd>
+                        </dl>
+                    </div>
+                    <div class="movie right guide">
+                        <h4>观影指南</h4>
+                        <div>
+                            <a href="javascript:;"><img src="img/moveright.jpg" alt=""></a>
+                            <dl>
+                                <dt><span>影片名</span><span>时光热度排名</span></dt>
+                                <dd class="odd">
+                                    <a href="javascript:;" class="moviename">大话西游3</a>
+                                    <span>01<i></i></span>
+                                    <a href="javascript:;" class="movie_btn">想看</a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="moviename">反贪风暴2</a>
+                                    <span>02<i></i></span>
+                                    <a href="javascript:;" class="movie_btn">想看</a>
+                                </dd>
+                                <dd class="odd">
+                                    <a href="javascript:;" class="moviename">爵迹</a>
+                                    <span>03<i></i></span>
+                                    <a href="javascript:;" class="movie_btn commonBtn">预售</a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="moviename">追凶者也</a>
+                                    <span>04<i></i></span>
+                                    <a href="javascript:;" class="movie_btn commonBtn">预售</a>
+                                </dd>
+                                <dd><a href="javascript:;" class="movie_more">更多 ></a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticketShow" >
+                    <div class="movie left example">
+                        <div class="move_bar changeCL">
+                            <h4>特色榜单</h4>
+                            <a href="javascript:;">更多 ></a>
+                        </div>
+                        <ul>
+                            <li class="pic_move">
+                                <dl>
+                                    <dt><a href="javascript:;"><img src="img/example1.jpg" alt=""></a></dt>
+                                    <dd><a href="javascript:;"><img src="img/example2.jpg" alt=""></a></dd>
+                                    <dd>
+                                        <a href="javascript:;"><img src="img/example2.jpg" alt="">
+                                        <span>
+                                            <strong>
+                                                <i>50</i>
+                                                部电影 >
+                                            </strong>
+                                        </span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <h3><a href="javascript:;">Ranker评选最佳青少年电影50部</a></h3>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript:;"><img src="img/example3.jpg" alt=""></a></dt>
+                                    <dd><a href="javascript:;"><img src="img/example4.jpg" alt=""></a></dd>
+                                    <dd>
+                                        <a href="javascript:;"><img src="img/example4.jpg" alt="">
+                                        <span>
+                                            <strong>
+                                                <i>20</i>
+                                                部电影 >
+                                            </strong>
+                                        </span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <h3><a href="javascript:;">《Indiewire》评20年20部动画佳作</a></h3>
+                            </li>
+                            <li class="pic_move">
+                                <dl>
+                                    <dt><a href="javascript:;"><img src="img/example5.jpg" alt=""></a></dt>
+                                    <dd><a href="javascript:;"><img src="img/example6.jpg" alt=""></a></dd>
+                                    <dd>
+                                        <a href="javascript:;"><img src="img/example6.jpg" alt="">
+                                        <span>
+                                            <strong>
+                                                <i>27</i>
+                                                部电影 >
+                                            </strong>
+                                        </span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <h3><a href="javascript:;">27部90年代最佳动作片</a></h3>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt><a href="javascript:;"><img src="img/example7.jpg" alt=""></a></dt>
+                                    <dd><a href="javascript:;"><img src="img/example8.jpg" alt=""></a></dd>
+                                    <dd>
+                                        <a href="javascript:;"><img src="img/example8.jpg" alt="">
+                                        <span>
+                                            <strong>
+                                                <i>10</i>
+                                                部电影 >
+                                            </strong>
+                                        </span>
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <h3><a href="javascript:;">电影中的残酷老师</a></h3>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="movie right ticket" id="ticket">
+                        <h4>电影票房</h4>
+                        <ul class="movie_ticket" id="movie_ticket">
+                            <li><a href="javascript:;"><span class="cur">内地</span></a></li>
+                            <li><a href="javascript:;"><span>北美</span></a></li>
+                            <li><a href="javascript:;"><span>全球</span></a></li>
+                        </ul>
+                        <div class="ticketNum">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>01</dt>
+                                        <dd><a href="javascript:;" class="ticket_img"><img src="img/cars1.jpg" alt=""><i>7.9</i></a></dd>
+                                        <dd>
+                                            <a href="" class="ticket_title">星际迷航3：超越星辰</a>
+                                            <p>日票房：1688.2万</p>
+                                            <p>累计：1931.4万</p>
+                                            <p>单位：元</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>02</dt>
+                                        <dd><a href="javascript:;" class="ticket_img"><img src="img/cars11.jpg" alt=""><i>7.3</i></a></dd>
+                                        <dd>
+                                            <a href="" class="ticket_title">鲨滩</a>
+                                            <p>日票房：379.4万</p>
+                                            <p>累计：379.4万</p>
+                                            <p>单位：元</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>03</dt>
+                                        <dd><a href="javascript:;" class="ticket_img"><img src="img/cars12.jpg" alt=""><i>7.5</i></a></dd>
+                                        <dd>
+                                            <a href="" class="ticket_title">九条命</a>
+                                            <p>日票房：307.5万</p>
+                                            <p>累计：312.3万</p>
+                                            <p>单位：元</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <p class="searchmore"><a href="javascript:;">更多 ></a></p>
+                        </div>
+                        <div class="ticketNum">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>01</dt>
+                                        <dd><a href="javascript:;" class="ticket_img"><img src="img/cars2.jpg" alt=""><i>7.9</i></a></dd>
+                                        <dd>
+                                            <a href="" class="ticket_title">屏住呼吸</a>
+                                            <p>日票房：1570.0万</p>
+                                            <p>累计：5112.4万</p>
+                                            <p>单位：美元</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>02</dt>
+                                        <dd><a href="javascript:;" class="ticket_img"><img src="img/cars21.jpg" alt=""><i>6.7</i></a></dd>
+                                        <dd>
+                                            <a href="" class="ticket_title">X特遣队</a>
+                                            <p>日票房：1000.5万</p>
+                                            <p>累计：2.97亿</p>
+                                            <p>单位：美元</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>03</dt>
+                                        <dd><a href="javascript:;" class="ticket_img"><img src="img/cars22.jpg" alt=""></a></dd>
+                                        <dd>
+                                            <a href="" class="ticket_title">彼得的龙</a>
+                                            <p>日票房：647.1万</p>
+                                            <p>累计：6422.3万</p>
+                                            <p>单位：美元</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <p class="searchmore"><a href="javascript:;">更多 ></a></p>
+                        </div>
+                        <div class="ticketNum">
+                            <ul>
+                                <li>
+                                    <dl>
+                                        <dt>01</dt>
+                                        <dd><a href="javascript:;" class="ticket_img"><img src="img/cars21.jpg" alt=""><i>6.7</i></a></dd>
+                                        <dd>
+                                            <a href="" class="ticket_title">X特遣队</a>
+                                            <p>日票房：1000.5万</p>
+                                            <p>累计：2.97亿</p>
+                                            <p>单位：美元</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>02</dt>
+                                        <dd><a href="javascript:;" class="ticket_img"><img src="img/cars1.jpg" alt=""><i>7.9</i></a></dd>
+                                        <dd>
+                                            <a href="" class="ticket_title">星际迷航3：超越星辰</a>
+                                            <p>日票房：1688.2万</p>
+                                            <p>累计：1931.4万</p>
+                                            <p>单位：元</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>03</dt>
+                                        <dd><a href="javascript:;" class="ticket_img"><img src="img/cars22.jpg" alt=""></a></dd>
+                                        <dd>
+                                            <a href="" class="ticket_title">彼得的龙</a>
+                                            <p>日票房：647.1万</p>
+                                            <p>累计：6422.3万</p>
+                                            <p>单位：美元</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <p class="searchmore"><a href="javascript:;">更多 ></a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticketShow changeCL" >
+                    <div class="movie left comment">
+                        <div class="move_bar">
+                            <h4>热门影评</h4>
+                            <a href="javascript:;">更多 ></a>
+                        </div>
+                        <div>
+                            <div class="mainCom" id="mainCom">
+                                <div class="comInner">
+                                    <div class="comInner_floor">
+                                        <a href="javascript:;"><img src="img/lunbo1.jpg" alt=""></a>
+                                        <div class="comBox">
+                                            <div class="comHead">
+                                                <a href="javascript:;" class="headImg"><img src="img/touxiang1.jpg" alt=""></a>
+                                                <p>
+                                                    <a href="">kiki204629</a>
+                                                    <span>评</span>
+                                                    <span class="title">《樱桃小丸子 来自意大利的少年》</span>
+                                                    <i>8.0</i>
+                                                </p>
+                                            </div>
+                                            <h3>那些小丸子教会我的清浅人生</h3>
+                                            <p class="passage"><i></i>相对于柯南、小新，小丸子真的低调很多，二十多年依旧围绕着她以及其家人和同学展开，有关一些简简单单的生活小事。</p>
+                                        </div>
+                                    </div>
+                                    <div class="comInner_floor">
+                                        <a href="javascript:;"><img src="img/lunbo2.jpg" alt=""></a>
+                                        <div class="comBox">
+                                            <div class="comHead">
+                                                <a href="javascript:;" class="headImg"><img src="img/touxiang2.jpg" alt=""></a>
+                                                <p>
+                                                    <a href="">神经影FUN</a>
+                                                    <span>评</span>
+                                                    <span class="title">《马男波杰克》</span>
+                                                    <i>8.0</i>
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <h3>在这个世界，我是个人渣</h3>
+                                                <p class="passage"><i></i>马南告诉我们，人生是一个悲剧。虽然这里面有很多励志、哲理的台词，但更多是让人感到近似绝望的孤独和虚无。</p>
+                                            </div>
+                                            </div>
+                                    </div>
+                                    <div class="comInner_floor">
+                                        <a href="javascript:;"><img src="img/lunbo3.jpg" alt=""></a>
+                                        <div class="comBox">
+                                            <div class="comHead">
+                                                <a href="javascript:;" class="headImg"><img src="img/touxiang3.jpg" alt=""></a>
+                                                <p>
+                                                    <a href="">火麒麟ST</a>
+                                                    <span>评</span>
+                                                    <span class="title">《鲨滩》</span>
+                                                    <i>8.0</i>
+                                                </p>
+                                            </div>
+                                            <h3>进击的不止是巨人，还有鲨鱼！</h3>
+                                            <p class="passage"><i></i>看到昔日的S女王不再模特般大秀身材，而是先被鲨鱼整的狼狈不堪、然后逆袭独自对抗鲨鱼之后，竟对这部电影有了蠢蠢欲动的期待。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li class="on"></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <a href="javascript:;" class="combtn_left combtn" id="combtn_left" ><i class="comL"></i ></a>
+                                <a href="javascript:;"  class="combtn_right combtn" id="combtn_right"><i class="comR"></i></a>
+                            </div>
+                            <div class="com_words">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;" class="words_r"><img src="img/yingping1.jpg" alt=""></a>
+                                        <a href="javascript:;" class="words_l"><i></i>我建议你在观看本片的时候戴上耳机。丝丝入耳的抓人音乐、木质家具碎裂的音效，绝对会给予你优质的临场感。</a>
+                                        <p>
+                                            <a href="javascript:;" class="space" >野评人</a>评<a href="javascript:;" class="words_title">《招魂2：恩菲尔德吵闹鬼</a><i>9.0</i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="words_r"><img src="img/yingping2.jpg" alt=""></a>
+                                        <a href="javascript:;" class="words_l"><i></i>面对现实的黑色幽默，一直以为自己“在云端”的男子体会到了被他解雇的人的正真感受---一种无所依靠的失重感</a>
+                                        <p>
+                                            <a href="javascript:;" class="space" >水印火影</a>评<a href="javascript:;" class="words_title">《在云端》</a><i>8.0</i>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="words_r"><img src="img/yingping3.jpg" alt=""></a>
+                                        <a href="javascript:;" class="words_l"><i></i>从尼基扣住杀手的嘴到她倒地，切了9次，每个镜头大约0.3秒。通过剪辑，他们的打斗根本不需要碰到彼此！</a>
+                                        <p>
+                                            <a href="javascript:;" class="space" >冯竹溪</a>评<a href="javascript:;" class="words_title">《谍影重重3》</a><i>8.0</i>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie right activity">
+                        <h4>社区活动</h4>
+                        <div>
+                            <a href="javascript:;"><img src="img/fanpai.jpg" alt=""></a>
+                            <div class="com_activity">
+                                <h3><a href="">谁是让你又爱又恨的反派角色？</a></h3>
+                                <p>只需要晒出那些年让你又爱又恨的反派角色，就有机会获得《X特遣队 限定版》1本！快快出手吧！</p>
+                                <a href="" class="join">我参加</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div><a href="javascript:;"><img src="img/big4.jpg" alt=""></a></div>
+        <div class="enjoy">
+                <h4><a href="javacsript:;">全球拾趣</a></h4>
+                <ul class="hot_show_img">
+                    <li><a href="javascript:;"><img src="img/picture1.jpg" alt=""><h3>《天空之眼》将全线角逐奥斯卡</h3><span>海伦再冲奥 艾伦里克曼有望获最佳男配</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture2.jpg" alt=""><h3>小本《夜色人生》首曝预告</h3><span>画风复古华丽 小本走上黑帮不归路</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture3.jpg" alt=""><h3>漫威奇幻片《奇异博士》发新海报</h3><span>城市颠倒天地扭转 凸显卷福法力无边</span><i></i></a></li>
+                    <li class="event"><a href="javascript:;"><img src="img/picture4.jpg" alt=""><h3>专访HBO新剧《西部世界》五大主演</h3><span>霍普金斯：人的痛苦来自控制一切的执念</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture5.jpg" alt=""><h3>《夜行动物》曝角色海报&新剧照</h3><span>艾米亚当斯颠覆形象 角色面孔被空白吞噬</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture6.jpg" alt=""><h3>窦靖童大银幕首次献声 酷似王菲</h3><span>爱情片《七月与安生》曝主题曲mv</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture7.jpg" alt=""><h3>张艺谋魔幻片《长城》发布新款海报</h3><span>马特达蒙纵身飞入战场 新预告或将发布</span><i></i></a></li>
+                    <li class="event"><a href="javascript:;"><img src="img/picture8.jpg" alt=""><h3>汤姆汉克斯《萨利机长》影评</h3><span>表演出彩有望再冲奥 细节稍有缺憾瑕不掩瑜</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture9.jpg" alt=""><h3>陶晶莹暌违7年再度主持金马奖</h3><span>杨千霈+“飞轮海”辰亦儒搭档星光大道</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture10.jpg" alt=""><h3>孩之宝推出《星战》1:1头盔系列</h3><span>内置变声器 细节还原剧中形象</span><i></i></a></li>
+                    <li><a href="javascript:;"><img src="img/picture11.jpg" alt=""><h3>乐高推出《星战》死星巨型周边</h3><span>经典角色丰富机关 豪华配置全面升级</span><i></i></a></li>
+                    <li class="event"><a href="javascript:;"><img src="img/picture12.jpg" alt=""><h3>张艺谋是这样震撼世界的</h3><span>G20晚会《最忆是杭州》记录片揭秘</span><i></i></a></li>
+
+                </ul>
+            </div>
+        <div class="img1">
+            <p class="lookmore"><a href="javascript:;">加载更多</a></p>
+            <a href="javascript:;"><img src="img/big5.jpg" alt=""></a>
+        </div>
+    </div>
+    <!------------------------关于我们----------------------------------------------------------->
+    <div class="footout">
+        <span class="foot_bg"></span>
+        <div class="footinner">
+            <div class="foot_logo rel">
+                <dl>
+                    <dt><a href="javascript:;" class="foot_title"></a></dt>
+                    <dd><a href="javascript:;">加入我们</a><a href="javascript:;" class="marg">联系我们</a></dd>
+                    <dd><a href="javascript:;">站务论坛</a><a href="javascript:;" class="marg">问题反馈</a></dd>
+                    <dd><a href="javascript:;">社区准则</a><a href="javascript:;" class="marg">网站地图</a></dd>
+                    <dd><a href="javascript:;">隐私政策</a><a href="javascript:;" class="marg">English</a></dd>
+                </dl>
+                <i class="line1 abs"></i>
+            </div>
+            <div class="foot_maintain rel">
+                <dl>
+                    <dt>栏目</dt>
+                    <dd><a href="javascript:;">新闻</a></dd>
+                    <dd><a href="javascript:;">影院</a></dd>
+                    <dd><a href="javascript:;">商城</a></dd>
+                    <dd><a href="javascript:;">社区</a></dd>
+                </dl>
+                <dl>
+                    <dt>推荐</dt>
+                    <dd><a href="javascript:;">观影指南</a><a href="javascript:;" class="marg">电影票房</a></dd>
+                    <dd><a href="javascript:;">时光对话</a><a href="javascript:;" class="marg">新片预告</a></dd>
+                    <dd><a href="javascript:;">特色榜单</a><a href="javascript:;" class="marg">电影猜猜猜</a></dd>
+                    <dd><a href="javascript:;">全球拾趣</a><a href="javascript:;" class="marg">卡片大富翁</a></dd>
+                </dl>
+                <dl class="foot_message">
+                    <dt>关注我们</dt>
+                    <dd><a href="javascript:;" class="sina"></a></dd>
+                    <dd><a href="javascript:;" class="wechat"></a></dd>
+                    <dd><a href="javascript:;" class="rss"></a></dd>
+                </dl>
+                <i class="line1 abs"></i>
+            </div>
+            <div class="foot_weak">
+                <dl>
+                    <dt><strong>时光周刊</strong><span>第180期</span></dt>
+                    <dd><a href="javascript:;"><img src="img/zhinan.jpg" alt=""></a></dd>
+                    <dd class="input rel"><input type="text" placeholder="邮箱地址"><a href="javascript:;" class="foot_Btn abs">订阅</a></dd>
+                </dl>
+            </div>
+            <div class="foot_buy">
+                <dl>
+                    <dt><strong>手机购票</strong><span>方便 实惠</span></dt>
+                    <dd><a href="javascript:;"></a></dd>
+                    <dd><span>扫描二维码  下载客户端</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="db_foot">
+            <p>
+                <span>北京动艺时光网络科技有限公司</span>Copyright 2006-2016 Mtime.com Inc. All rights reserved.
+                <br>
+                <a href="javascript:;">京ICP证050715号</a><a href="javascript:;">网络视听许可证0108265号</a><a href="javascript:;">网络文化经营许可证</a><a href="javascript:;">广播电视节目制作经营许可证(京)字第1435号</a><span>京公网安备：110105000744号</span>
+            </p>
+            <div><a href="javascript:;" class="logo_L"></a><a href="javascript:;" class="logo_R"></a></div>
+        </div>
+    </div>
+
+</div>
+<script src="js/utils.js"></script>
+<script src="js/move.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>
