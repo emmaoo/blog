@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>马燕个人简介</title>
+    <link type="image/x-icon" href="img/favicon.ico" rel="icon">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/reset.min.css">
@@ -16,7 +17,7 @@
     </style>
     <script>
         ~(function (desW) {
-            var winW = document.documentElement.clientWidth;
+            var winW = document.documentElement.clientWidth||document.body.clientWidth;
             var n = winW / desW;
             document.documentElement.style.fontSize = n * 100 + "px";
         })(640);
@@ -157,17 +158,12 @@
         pagination: '.swiper-pagination',
         onSlideChangeEnd: function (swiper) {
             var slideAry = swiper.slides;
-            /*所有的滑块*/
             var trueSlideNum = slideAry.length - 2;
-            /*真实的滑块的个数*/
             var lastNum = trueSlideNum + 1;
-            /*最后一个滑块的索引*/
-            /*获得当前滑块的索引*/
             var curIn = swiper.activeIndex;
             [].forEach.call(slideAry, function (item, index) {
                 item.id = null;
                 if (curIn == index) {
-                    /*第一张跟真实滑块最后一张是一样的，最后一张跟真实滑块的第一张是一样*/
                     switch (curIn) {
                         case 0 :
                             item.id = "page" + trueSlideNum;
@@ -204,7 +200,6 @@
         window.setTimeout(function () {
             audioMusic.play();
             /*播放*/
-            /*边播放边缓存，触发事件canplay*/
             audioMusic.addEventListener("canplay", function () {
                 music.className = "music musicMove";
                 note.className = 'note note_play';
