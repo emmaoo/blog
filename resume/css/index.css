@@ -199,25 +199,25 @@ ul,span,p{
 }
 .slide2 .imgP2 img:nth-child(3){
     left: 0.8rem;
-    top: 2.4rem;
+    top: 2.2rem;
     width: .05rem;
     height: 4rem;
 }
 .slide2 .imgP2 img:nth-child(4){
     left: .6rem;
-    top: 2.6rem;
+    top: 2.4rem;
     width: 4rem;
     height: .05rem;
 }
 .slide2 .imgP2 img:nth-child(5){
     left: 2.8rem;
-    top: 9.4rem;
+    top: 9rem;
     width: 3.5rem;
     height: .05rem;
 }
 .slide2 .imgP2 img:nth-child(6){
     left: 5.4rem;
-    top: 7.2rem;
+    top: 6.8rem;
     width: 0.05rem;
     height: 3rem;
 }
