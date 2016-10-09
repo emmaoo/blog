@@ -10,7 +10,7 @@ html,body{
 .icon{
     position:absolute;
     left:3rem;
-    bottom:.7rem;
+    bottom:.4rem;
     width: .4rem;
     height: .18rem;
     background: url("../img/icon.png") no-repeat;
@@ -212,14 +212,14 @@ ul,span,p{
 .slide2 .imgP2 img:nth-child(5){
     left: 2.8rem;
     top: 9.6rem;
-    width: 4rem;
+    width: 3.5rem;
     height: .05rem;
 }
 .slide2 .imgP2 img:nth-child(6){
     left: 5.6rem;
     top: 7.2rem;
     width: 0.05rem;
-    height: 3.5rem;
+    height: 3rem;
 }
 
 .slide2 .self_info{
