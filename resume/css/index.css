@@ -10,7 +10,7 @@ html,body{
 .icon{
     position:absolute;
     left:3rem;
-    bottom:.4rem;
+    bottom:.3rem;
     width: .4rem;
     height: .18rem;
     background: url("../img/icon.png") no-repeat;
@@ -211,12 +211,12 @@ ul,span,p{
 }
 .slide2 .imgP2 img:nth-child(5){
     left: 2.8rem;
-    top: 9.6rem;
+    top: 9.4rem;
     width: 3.5rem;
     height: .05rem;
 }
 .slide2 .imgP2 img:nth-child(6){
-    left: 5.6rem;
+    left: 5.4rem;
     top: 7.2rem;
     width: 0.05rem;
     height: 3rem;
@@ -234,7 +234,7 @@ ul,span,p{
 .slide2 ul{
     position: absolute;
     left: 1.2rem;
-    top: 3rem;
+    top: 2.6rem;
 }
 .slide2 ul li{
     background: url("../img/slide2/bg_2.png") repeat-x bottom;
@@ -268,8 +268,8 @@ ul,span,p{
      -webkit-animation:rollIn 1s .2s both;
  }
 #page2 img:nth-child(2){
-    animation:moveRound  1.5s .6s linear both;
-    -webkit-animation:moveRound 1.5s .6s linear both;
+    animation:moveRound  .6s .6s linear both;
+    -webkit-animation:moveRound .6s .6s linear both;
 }
 @keyframes moveRound {
     0%{
@@ -402,7 +402,7 @@ ul,span,p{
     overflow: hidden;
     position: absolute;
     left: .8rem;
-    top:3rem;
+    top:2.6rem;
 }
 .slide3 .showP3 ul{
     float: left;
